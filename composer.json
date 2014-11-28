@@ -12,11 +12,16 @@
         }
     ],
     "require": {
-        "symfony/symfony": ">=2.1.0",
+        "symfony/symfony": "~2.1",
         "kphoen/doctrine-state-machine": "~1.0"
     },
     "autoload": {
         "psr-0": { "KPhoen\\DoctrineStateMachineBundle": "" }
     },
-    "target-dir": "KPhoen/DoctrineStateMachineBundle"
+    "target-dir": "KPhoen/DoctrineStateMachineBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
