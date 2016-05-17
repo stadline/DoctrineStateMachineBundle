@@ -6,7 +6,7 @@ parameters:
 services:
     kphoen.state_machine.factory:
         class: %kphoen.state_machine.factory.class%
-        arguments: [ @service_container, 'kphoen.state_machine' ]
+        arguments: [ "@service_container", 'kphoen.state_machine' ]
 
     kphoen.state_machine.array_loader:
         class:      %kphoen.state_machine.array_loader.class%
@@ -15,5 +15,5 @@ services:
 
     kphoen.state_machine:
         class:      %kphoen.state_machine.class%
-        arguments:  [ ~, @event_dispatcher ]
+        arguments:  [ ~, "@event_dispatcher" ]
         scope:      prototype
